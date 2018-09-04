@@ -1,0 +1,9 @@
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\bin\Debug\UnistMusicMod.exe
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\bin\Debug\UnistMusicMod.pdb
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.csprojAssemblyReference.cache
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.Properties.Resources.resources
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.csproj.GenerateResource.cache
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.csproj.CoreCompileInputs.cache
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.exe
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.pdb
+E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicMod.MainWindow.resources
