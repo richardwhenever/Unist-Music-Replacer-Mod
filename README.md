@@ -3,6 +3,8 @@
 
 Like any good code, the entirety of the program is in a single 1000 line file. Not particularly complicated however.
 
+-----
+
 To use the UnistMusicReplacer, put the .exe into the main folder of the Under Night In-Birth EXE Late[st].
 e.g. "C:\Program Files\Steam\steamapps\common\UNDER NIGHT In-Birth Exe Late[st]\
 
