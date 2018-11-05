@@ -13,6 +13,3 @@ Start up the UnistMusicReplacer.exe and select the song files you wish to use.
 NOTE: Files have to be type .ogg to work. Otherwise, the game will just play silence.
 
 You can find many free software online that can convert music files for you. Audacity is personally recommended. 
-
-If any other issues occur; included is a backup folder of all the original music. 
-Simply copy the contents of the backup folder into the \d folder to fix any issues.
