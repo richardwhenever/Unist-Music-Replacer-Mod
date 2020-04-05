@@ -22,6 +22,7 @@ namespace UnistMusicMod
         public string HildaThemeReplaceLocation { get; set; }
         public string HydeThemeReplaceLocation { get; set; }
         public string LinneThemeReplaceLocation { get; set; }
+        public string LondrekiaThemeReplaceLocation { get; set; }
         public string MerkavaThemeReplaceLocation { get; set; }
         public string MikaThemeReplaceLocation { get; set; }
         public string NanaseThemeReplaceLocation { get; set; }
@@ -36,6 +37,7 @@ namespace UnistMusicMod
 
         public string HydeVsSethReplaceLocation { get; set; }
         public string GordeauVsChaosReplaceLocation { get; set; }
+        public string LondrekiaVsWagnerReplaceLocation { get; set; }
 
         public string MainMenuReplaceLocation { get; set; }
         public string CharacterSelectReplaceLocation { get; set; }
@@ -43,6 +45,7 @@ namespace UnistMusicMod
         public string VictoryScreenReplaceLocation { get; set; }
         public string AccessConnectReplaceLocation { get; set; }
         public string ChroniclesReplaceLocation { get; set; }
+        public string LatestOpeningReplaceLocation { get; set; }
         #endregion
 
         #region Original Music
@@ -55,6 +58,7 @@ namespace UnistMusicMod
         public string HildaThemeOriginal { get; set; }
         public string HydeThemeOriginal { get; set; }
         public string LinneThemeOriginal { get; set; }
+        public string LondrekiaThemeOriginal { get; set; }
         public string MerkavaThemeOriginal { get; set; }
         public string MikaThemeOriginal { get; set; }
         public string NanaseThemeOriginal { get; set; }
@@ -65,10 +69,11 @@ namespace UnistMusicMod
         public string VatistaThemeOriginal { get; set; }
         public string WagnerThemeOriginal { get; set; }
         public string WaldsteinThemeOriginal { get; set; }
-        public string YuzurihaThemeOriginal { get; set; }
+        public string YuzurihaThemeOriginal { get; set; }        
 
         public string HydeVsSethOriginal { get; set; }
         public string GordeauVsChaosOriginal { get; set; }
+        public string LondrekiaVsWagnerOriginal { get; set; }
 
         public string MainMenuOriginal { get; set; }
         public string CharacterSelectOriginal { get; set; }
@@ -76,6 +81,7 @@ namespace UnistMusicMod
         public string VictoryScreenOriginal { get; set; }
         public string AccessConnectOriginal { get; set; }
         public string ChroniclesOriginal { get; set; }
+        public string LatestOpeningOriginal { get; set; }
         #endregion
 
         public MainWindow()
@@ -263,6 +269,22 @@ namespace UnistMusicMod
                     LinneThemeOriginal = currentPath;
                 }
 
+                if (!File.Exists(Environment.CurrentDirectory + @"\d\Ndos1Xyptoos8soza"))
+                {
+                    System.Windows.Forms.MessageBox.Show("Could not locate Londrekia's Music File. "
+                        + Environment.NewLine
+                        + "Refer to the \"OriginalMusicFilesDetail.txt\" to find "
+                        + "which file you need to copy from the \\Backup folder to the \\d folder.");
+
+                    System.Windows.Forms.Application.Exit();
+                    validationSuccess = false;
+                }
+                else
+                {
+                    currentPath = Environment.CurrentDirectory + @"\d\Ndos1Xyptoos8soza";
+                    LondrekiaThemeOriginal = currentPath;
+                }
+
                 if (!File.Exists(Environment.CurrentDirectory + @"\d\Glrohmwo51Rjwotll"))
                 {
                     System.Windows.Forms.MessageBox.Show("Could not locate Merkava's Music File. "
@@ -423,6 +445,22 @@ namespace UnistMusicMod
                 else
                 {
                     currentPath = Environment.CurrentDirectory + @"\d\V9aSgloiawoto0boa";
+                    LondrekiaVsWagnerOriginal = currentPath;
+                }
+
+                if (!File.Exists(Environment.CurrentDirectory + @"\d\Jouokpzo72Eioodao74Tvlowoo"))
+                {
+                    System.Windows.Forms.MessageBox.Show("Could not locate Londrekia vs Wagner's Music File. "
+                        + Environment.NewLine
+                        + "Refer to the \"OriginalMusicFilesDetail.txt\" to find "
+                        + "which file you need to copy from the \\Backup folder to the \\d folder.");
+
+                    System.Windows.Forms.Application.Exit();
+                    validationSuccess = false;
+                }
+                else
+                {
+                    currentPath = Environment.CurrentDirectory + @"\d\Jouokpzo72Eioodao74Tvlowoo";
                     YuzurihaThemeOriginal = currentPath;
                 }
 
@@ -557,6 +595,22 @@ namespace UnistMusicMod
                     ChroniclesOriginal = currentPath;
                 }
 
+                if (!File.Exists(Environment.CurrentDirectory + @"\d\gknorqooqZslmeeaem"))
+                {
+                    System.Windows.Forms.MessageBox.Show("Could not locate Unknown Actor EXE:Late[st] Opening Theme's Music File. "
+                        + Environment.NewLine
+                        + "Refer to the \"OriginalMusicFilesDetail.txt\" to find "
+                        + "which file you need to copy from the \\Backup folder to the \\d folder.");
+
+                    System.Windows.Forms.Application.Exit();
+                    validationSuccess = false;
+                }
+                else
+                {
+                    currentPath = Environment.CurrentDirectory + @"\d\gknorqooqZslmeeaem";
+                    LatestOpeningOriginal = currentPath;
+                }
+
                 #endregion
 
                 if (validationSuccess)
@@ -679,7 +733,17 @@ namespace UnistMusicMod
             {
                 songList.Add("Night Walker (Linne's Theme) : Unchanged");
             }
-                
+
+            if (LondrekiaThemeReplaceLocation != null)
+            {
+                System.IO.File.Copy(LondrekiaThemeReplaceLocation, LondrekiaThemeOriginal, true);
+                songList.Add("Icefield White Night (Londrekia Theme) : " + LondrekiaThemeReplaceLocation.Split('\\').Last());
+            }
+            else
+            {
+                songList.Add("Icefield White Night (Londrekia Theme) : Unchanged");
+            }
+
             if (MerkavaThemeReplaceLocation != null)
             {
                 System.IO.File.Copy(MerkavaThemeReplaceLocation, MerkavaThemeOriginal, true);
@@ -801,6 +865,16 @@ namespace UnistMusicMod
             {
                 songList.Add("Cross Thought (Gordeau vs Chaos Theme) : Unchanged");
             }
+
+            if (LondrekiaVsWagnerReplaceLocation != null)
+            {
+                System.IO.File.Copy(LondrekiaVsWagnerReplaceLocation, LondrekiaVsWagnerOriginal, true);
+                songList.Add("Incompatible Relation (Londrekia vs Wagner Theme) : " + LondrekiaVsWagnerReplaceLocation.Split('\\').Last());
+            }
+            else
+            {
+                songList.Add("Incompatible Relation (Londrekia vs Wagner Theme) : Unchanged");
+            }
             #endregion
 
             #region Miscellaneous
@@ -862,6 +936,16 @@ namespace UnistMusicMod
             else
             {
                 songList.Add("Access Connect(Network Menu) : Unchanged");
+            }
+
+            if (LatestOpeningReplaceLocation != null)
+            {
+                System.IO.File.Copy(LatestOpeningReplaceLocation, LatestOpeningOriginal, true);
+                songList.Add("Unknown Actor EXE:Late[st] Opening Theme : " + LatestOpeningReplaceLocation.Split('\\').Last());
+            }
+            else
+            {
+                songList.Add("Unknown Actor EXE:Late[st] Opening Theme : Unchanged");
             }
             #endregion
 
@@ -1067,6 +1151,19 @@ namespace UnistMusicMod
             }
         }
 
+        private void londrekiaThemeButton_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var file = openFileDialog.FileName;
+                LondrekiaThemeReplaceLocation = file;
+                londrekiaThemeFileLocation.Text = openFileDialog.FileName.ToString();
+            }
+        }
+
         private void merkavaThemeButton_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
@@ -1132,6 +1229,10 @@ namespace UnistMusicMod
             }
         }
 
+
+        #endregion
+
+        #region Character Themes 3/3
         private void sethThemeButton_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
@@ -1145,9 +1246,6 @@ namespace UnistMusicMod
             }
         }
 
-        #endregion
-
-        #region Character Themes 3/3
         private void vatistaThemeButton_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog();
@@ -1209,7 +1307,7 @@ namespace UnistMusicMod
             {
                 var file = openFileDialog.FileName;
                 HydeVsSethReplaceLocation = file;
-                hydeVsSethThemeFileLocation.Text = openFileDialog.FileName.ToString();
+                londrekiaVsWagnerThemeFileLocation.Text = openFileDialog.FileName.ToString();
             }
         }
 
@@ -1225,10 +1323,23 @@ namespace UnistMusicMod
                 gordeauVsChaosThemeFileLocation.Text = openFileDialog.FileName.ToString();
             }
         }
+
+        private void londrekiaVsWagnerThemeButton_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var file = openFileDialog.FileName;
+                LondrekiaVsWagnerReplaceLocation = file;
+                londrekiaVsWagnerThemeFileLocation.Text = openFileDialog.FileName.ToString();
+            }
+        }
         #endregion
 
         #region Miscellaneous
-        
+
 
         private void mainMenuThemeButton_Click(object sender, EventArgs e)
         {
@@ -1308,7 +1419,21 @@ namespace UnistMusicMod
             }
         }
 
+        private void latestOpeningButton_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var file = openFileDialog.FileName;
+                LatestOpeningReplaceLocation = file;
+                latestOpeningFileLocation.Text = openFileDialog.FileName.ToString();
+            }
+        }
+
         #endregion
-        
+
+
     }
 }

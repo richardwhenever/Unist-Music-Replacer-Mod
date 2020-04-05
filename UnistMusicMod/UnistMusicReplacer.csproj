@@ -7,7 +7,7 @@
     <ProjectGuid>{C9E581EC-78C7-4189-89E7-181EEC568C41}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>UnistMusicReplacer</RootNamespace>
-    <AssemblyName>UnistMusicReplacer</AssemblyName>
+    <AssemblyName>UniclrMusicReplacer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ProgramIcon.ico</ApplicationIcon>
+    <ApplicationIcon>ProgramIconUniclrVersion.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterThemeFileUpload.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,7 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
-    <Content Include="ProgramIcon.ico" />
+    <Content Include="Icon2.ico" />
+    <Content Include="ProgramIconUniclrVersion.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

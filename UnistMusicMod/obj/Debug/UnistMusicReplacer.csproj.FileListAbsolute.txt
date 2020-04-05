@@ -7,3 +7,11 @@ E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\bin\Debug\UnistMusi
 E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicReplacer.Properties.Resources.resources
 E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicReplacer.exe
 E:\Games\SteamLibrary\Uniel Mods\UnistMusicMod\UnistMusicMod\obj\Debug\UnistMusicReplacer.pdb
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UnistMusicReplacer.csprojAssemblyReference.cache
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UnistMusicMod.MainWindow.resources
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UnistMusicReplacer.Properties.Resources.resources
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UnistMusicReplacer.csproj.GenerateResource.cache
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\bin\Debug\UniclrMusicReplacer.exe
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\bin\Debug\UniclrMusicReplacer.pdb
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UniclrMusicReplacer.exe
+E:\Games\SteamLibrary\Uniel Mods\Unist-Music-Replacer-Mod\UnistMusicMod\obj\Debug\UniclrMusicReplacer.pdb
