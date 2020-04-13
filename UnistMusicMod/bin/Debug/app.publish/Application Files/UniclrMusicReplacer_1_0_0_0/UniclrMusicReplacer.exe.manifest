@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="UniclrMusicReplacer.exe" version="1.0.0.0" publicKeyToken="ed18a4ff2a02ce75" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ProgramIconUniclrVersion.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="UniclrMusicReplacer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="UniclrMusicReplacer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UniclrMusicReplacer.exe" size="1161656">
+      <assemblyIdentity name="UniclrMusicReplacer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hjx0uyMoEjX5UN3aWA2LPowtpNM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Icon1.ico" size="45451">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DIxShXrDkIW5lKMvkXSg2TlSB0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icon2.ico" size="45451">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DIxShXrDkIW5lKMvkXSg2TlSB0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProgramIconUniclrVersion.ico" size="98657">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Amhzkf+qA1BAUBboIlhmGpjqls0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Wanderer-PC\Wanderer" issuerKeyHash="7c3e21e2c73a46683482bfb4670d76153c0dfd6d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>MS3Q3pLDaFlDL1fAh7tYuTVC3yM=</DigestValue></Reference></SignedInfo><SignatureValue>gEcKL7w1wceb8QmhcmJxbXSmxbU1mo/bYgvDzfd8vzfJKbOlBE09w38N7lAXH0CqLnOQWyr7qjiNwDc7IesB3o11BjBWQ7RI6hJLiE9Ts2wDs+8w/NgaWoByoxGDPaBANEsCvZM2KmU2MAvRXbWvOCAQJiy/na7anBslEYTYla8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>od9/hQOMooj9rU3B+7HxSiJsmkZn1Xq123mAoOE7p0cjhNUl2KGQN9QAf0lBjoBhVe8PdF5C6Bw/xwaiFEOd5Ys6WR0ZD9N1BtVpwMgz/fMC1tSsGGRXId2K5WBimaP/ns7HLKfB8YxfrY3S4rFccBppXpNEBxthfBByL6hxjuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="23df4235b958bb87c0572f435968c392ded02d31" Description="" Url=""><as:assemblyIdentity name="UniclrMusicReplacer.exe" version="1.0.0.0" publicKeyToken="ed18a4ff2a02ce75" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Wanderer-PC\Wanderer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>hmrx6UVCz16xlwtTOZdAx4oUZ6E=</DigestValue></Reference></SignedInfo><SignatureValue>YfOfnFDl3s6qR35gp2lRycYfcB6ttZIT64NV4onYVPreYxHj4hu3wj3ty4othDQ2MG3Ffy4UcmKWSHoYqPrb4sH6X8ZfSRsic2gzJimfaNrsFm6X3mpTa/NMxAyjGzvcwxc/2c+Is5agw3fxkoEmMCcQTDVB/It8xMiTgKiZiEU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>od9/hQOMooj9rU3B+7HxSiJsmkZn1Xq123mAoOE7p0cjhNUl2KGQN9QAf0lBjoBhVe8PdF5C6Bw/xwaiFEOd5Ys6WR0ZD9N1BtVpwMgz/fMC1tSsGGRXId2K5WBimaP/ns7HLKfB8YxfrY3S4rFccBppXpNEBxthfBByL6hxjuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQNj0qSsxgY5lMFlGy4FNBjzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAVwBhAG4AZABlAHIAZQByAC0AUABDAFwAVwBhAG4AZABlAHIAZQByMB4XDTIwMDQxMjIzMDk0NFoXDTIxMDQxMzA1MDk0NFowMzExMC8GA1UEAx4oAFcAYQBuAGQAZQByAGUAcgAtAFAAQwBcAFcAYQBuAGQAZQByAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAod9/hQOMooj9rU3B+7HxSiJsmkZn1Xq123mAoOE7p0cjhNUl2KGQN9QAf0lBjoBhVe8PdF5C6Bw/xwaiFEOd5Ys6WR0ZD9N1BtVpwMgz/fMC1tSsGGRXId2K5WBimaP/ns7HLKfB8YxfrY3S4rFccBppXpNEBxthfBByL6hxjuECAwEAATANBgkqhkiG9w0BAQUFAAOBgQAiOz16RcFzydmRu2O5K6YJeZtD7IFULzsUo/uMMfWJDJQ5EPwThRmS/n7hz6JvaraJr4m5sf43YM859gO5qArsyUMc2WSU0tqqyjx+4ZFpjH+ZRD4eSTx1s5u4kqWSwvL96b2lTC7Q7vgj0HoOaLrhbj2aLQJVbUY81EzrJaF4AA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

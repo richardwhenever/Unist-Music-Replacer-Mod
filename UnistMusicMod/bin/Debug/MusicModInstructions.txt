@@ -1,0 +1,17 @@
+To use the UniclrMusicReplacer, extract the files into the main folder of the Under Night In-Birth EXE Late[st].
+e.g. "C:\Program Files\Steam\steamapps\common\UNDER NIGHT In-Birth Exe Late[st]\
+
+Start up the UniclrMusicReplacer.exe and select the song files you wish to use.
+
+NOTE: Files have to be type .ogg to work. Otherwise, the game will just play silence.
+
+You can find many free software online that can convert music files for you. 
+
+If any other issues occur; included is a backup folder of all the original music. 
+Simply copy the contents of the backup folder into the \d folder to fix any issues.
+
+Update 4/4/2020:
+Added three new songs for the Uniclr Update.
+- Icefield White Night (Londrekia Theme)
+- Incompatible Relation (Londrekia vs Wagner Theme)
+- Unknown Actor EXE:Late[st] Opening Theme

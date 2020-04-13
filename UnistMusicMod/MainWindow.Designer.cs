@@ -161,6 +161,10 @@
             this.mainMenuThemeFileLocation = new System.Windows.Forms.TextBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.openingThemeButton = new System.Windows.Forms.Button();
+            this.openingThemeFileLocation = new System.Windows.Forms.TextBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -197,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.SuspendLayout();
             // 
             // replaceMusicButton
@@ -1081,7 +1086,7 @@
             // 
             // londrekiaVsWagnerThemeFileLocation
             // 
-            this.londrekiaVsWagnerThemeFileLocation.Location = new System.Drawing.Point(601, 600);
+            this.londrekiaVsWagnerThemeFileLocation.Location = new System.Drawing.Point(602, 600);
             this.londrekiaVsWagnerThemeFileLocation.Name = "londrekiaVsWagnerThemeFileLocation";
             this.londrekiaVsWagnerThemeFileLocation.Size = new System.Drawing.Size(191, 20);
             this.londrekiaVsWagnerThemeFileLocation.TabIndex = 18;
@@ -1257,6 +1262,10 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.openingThemeButton);
+            this.tabPage4.Controls.Add(this.openingThemeFileLocation);
+            this.tabPage4.Controls.Add(this.pictureBox32);
+            this.tabPage4.Controls.Add(this.label33);
             this.tabPage4.Controls.Add(this.latestOpeningButton);
             this.tabPage4.Controls.Add(this.latestOpeningFileLocation);
             this.tabPage4.Controls.Add(this.pictureBox31);
@@ -1562,6 +1571,43 @@
             this.label29.TabIndex = 41;
             this.label29.Text = "Note: Files must be type .ogg to work.";
             // 
+            // openingThemeButton
+            // 
+            this.openingThemeButton.Location = new System.Drawing.Point(506, 600);
+            this.openingThemeButton.Name = "openingThemeButton";
+            this.openingThemeButton.Size = new System.Drawing.Size(75, 23);
+            this.openingThemeButton.TabIndex = 36;
+            this.openingThemeButton.Text = "Browse";
+            this.openingThemeButton.UseVisualStyleBackColor = true;
+            this.openingThemeButton.Click += new System.EventHandler(this.openingThemeButton_Click);
+            // 
+            // openingThemeFileLocation
+            // 
+            this.openingThemeFileLocation.Location = new System.Drawing.Point(602, 600);
+            this.openingThemeFileLocation.Name = "openingThemeFileLocation";
+            this.openingThemeFileLocation.Size = new System.Drawing.Size(191, 20);
+            this.openingThemeFileLocation.TabIndex = 35;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(508, 492);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(200, 80);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox32.TabIndex = 34;
+            this.pictureBox32.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(514, 577);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(221, 15);
+            this.label33.TabIndex = 33;
+            this.label33.Text = "False Infinite Parallel (Opening Theme)";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1616,6 +1662,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1754,6 +1801,10 @@
         private System.Windows.Forms.TextBox latestOpeningFileLocation;
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button openingThemeButton;
+        private System.Windows.Forms.TextBox openingThemeFileLocation;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.Label label33;
     }
 }
 

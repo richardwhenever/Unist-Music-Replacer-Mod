@@ -46,6 +46,7 @@ namespace UnistMusicMod
         public string AccessConnectReplaceLocation { get; set; }
         public string ChroniclesReplaceLocation { get; set; }
         public string LatestOpeningReplaceLocation { get; set; }
+        public string OpeningThemeReplaceLocation { get; set; }
         #endregion
 
         #region Original Music
@@ -82,6 +83,7 @@ namespace UnistMusicMod
         public string AccessConnectOriginal { get; set; }
         public string ChroniclesOriginal { get; set; }
         public string LatestOpeningOriginal { get; set; }
+        public string OpeningThemeOriginal { get; set; }
         #endregion
 
         public MainWindow()
@@ -611,6 +613,22 @@ namespace UnistMusicMod
                     LatestOpeningOriginal = currentPath;
                 }
 
+                if (!File.Exists(Environment.CurrentDirectory + @"\d\ijoohcwflwmoiaaVago"))
+                {
+                    System.Windows.Forms.MessageBox.Show("Could not locate False Infinite Parallel (Opening Theme)'s Music File. "
+                        + Environment.NewLine
+                        + "Refer to the \"OriginalMusicFilesDetail.txt\" to find "
+                        + "which file you need to copy from the \\Backup folder to the \\d folder.");
+
+                    System.Windows.Forms.Application.Exit();
+                    validationSuccess = false;
+                }
+                else
+                {
+                    currentPath = Environment.CurrentDirectory + @"\d\ijoohcwflwmoiaaVago";
+                    OpeningThemeOriginal = currentPath;
+                }
+
                 #endregion
 
                 if (validationSuccess)
@@ -946,6 +964,16 @@ namespace UnistMusicMod
             else
             {
                 songList.Add("Unknown Actor EXE:Late[st] Opening Theme : Unchanged");
+            }
+
+            if (OpeningThemeReplaceLocation != null)
+            {
+                System.IO.File.Copy(OpeningThemeReplaceLocation, OpeningThemeOriginal, true);
+                songList.Add("False Infinite Parallel (Opening Theme) : " + OpeningThemeReplaceLocation.Split('\\').Last());
+            }
+            else
+            {
+                songList.Add("False Infinite Parallel (Opening Theme) : Unchanged");
             }
             #endregion
 
@@ -1432,8 +1460,20 @@ namespace UnistMusicMod
             }
         }
 
+
         #endregion
 
+        private void openingThemeButton_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
 
+            DialogResult result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var file = openFileDialog.FileName;
+                OpeningThemeReplaceLocation = file;
+                openingThemeFileLocation.Text = openFileDialog.FileName.ToString();
+            }
+        }
     }
 }
